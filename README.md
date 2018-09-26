@@ -26,6 +26,8 @@ Getting started
 2. Install requirements with command: ``pip install -r requirements.txt``
 3. Run the application with default settings: ``python applications/task1.py``
 
+The data download is throwing an error. Possibly an outdated url.
+
 System description
 ==================
 
