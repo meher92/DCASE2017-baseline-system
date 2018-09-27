@@ -744,7 +744,7 @@ class Dataset(object):
                         local_filename, headers = urlretrieve(
                             remote_file,
                             filename=tmp_file,
-                            reporthook=progress_hook(t),
+                            # reporthook=progress_hook(t),
                             data=None
                         )
 
