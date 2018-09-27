@@ -274,7 +274,7 @@ class Dataset(object):
 
         self.disable_progress_bar = not kwargs.get('show_progress_in_console', True)
         self.log_system_progress = kwargs.get('log_system_progress', False)
-        self.use_ascii_progress_bar = kwargs.get('use_ascii_progress_bar', True)
+        self.use_ascii_progress_bar = kwargs.get('use_ascii_progress_bar', False)
 
         # Dataset name
         self.name = kwargs.get('name', 'dataset')
@@ -744,7 +744,7 @@ class Dataset(object):
                         local_filename, headers = urlretrieve(
                             remote_file,
                             filename=tmp_file,
-                            # reporthook=progress_hook(t),
+                            reporthook=progress_hook(t),
                             data=None
                         )
 
